@@ -1,14 +1,7 @@
 {
-  "version": 2,
-  
-  "routes": [
-    {
-      "src": "/api/(.*)",
-      "dest": "api/index.js"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/frontend/index.html"
-    }
+  "rewrites": [
+    { "source": "/ui", "destination": "/frontend/index.html" },
+    { "source": "/admin", "destination": "/frontend/index.html" },
+    { "source": "/(.*)", "destination": "/frontend/index.html" }
   ]
 }
