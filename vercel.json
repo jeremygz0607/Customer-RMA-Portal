@@ -1,7 +1,12 @@
 {
-  "rewrites": [
-    { "source": "/ui", "destination": "/frontend/index.html" },
-    { "source": "/admin", "destination": "/frontend/index.html" },
-    { "source": "/(.*)", "destination": "/frontend/index.html" }
+  "routes": [
+    {
+      "src": "/ui",
+      "dest": "/frontend/index.html"
+    },
+    {
+      "src": "/admin",
+      "dest": "/frontend/index.html"
+    }
   ]
 }
